@@ -12,7 +12,7 @@ class TasksListWidget extends StatefulWidget {
 }
 
 class _TasksListWidgetState extends State<TasksListWidget> {
-  HiveDataStore _dataStore = HiveDataStore();
+  final HiveDataStore _dataStore = HiveDataStore();
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder(

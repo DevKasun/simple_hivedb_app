@@ -13,8 +13,8 @@ class HiveDataStore {
   }
 
   // show tasks list
-  Future<void> getTask({required String id}) async {
-    box.get(id);
+  Future<void> getTask({required int index, required TasksModel taskModel}) async {
+    box.putAt(index, taskModel);
   }
 
   // delete task
